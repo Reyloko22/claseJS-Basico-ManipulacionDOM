@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM básica - Curso Práctico de JavaScript</title>
+</head>
+<body>
+    <h1>Manipulación del DOM básica</h1>
+    <p>Esto es un párrafo</p>
+    <p class="parrafito">Esto es un párrafo con clase</p>
+    <p id="pid">Esto es un párrafo con ID</p>
+    <input placeholder="Escribe algo aquí" value="123" />
+
+
+
+    <h1>Escuchar elementos mediante eventos</h1>
+
+
+    <input id="calculo1" placeholder="Escribe algo aquí 1" />
+    <!-- le agregamos los atributos con  la ffinalidad de que ejecuten tareas que sean escuchadas en el JS. 
+    En estos casos lo que hacemos es escuchar cuando el input2 Cambia y en el boton se hace click-->
+    <input onchange="console.log('Cambio el input')" id="calculo2" placeholder="Escribe algo aquí 2" />
+    <!-- no es buena idea por manejo y comodidad el manejo de 
+        js en el htm como lo vimos en este ejemplo pero se 
+        puede manejar creando un atributo del evento que queremos escuchar y luego crear una funcion en JS con la accion para conectarlos.
+        <button id="buttonCalc" onclick="console.log('click del boton')">Calcular</button>
+        
+        de esta forma= 
+    -->
+<!-- 
+    recordemos que es importante cerrar con parentesis para crear la funcion -->
+    <!-- <button id="buttonCalc" onclick="clickButton()">Calcular</button> -->
+    
+    <!-- para manejar de forma mas limpia el html podriamos quitar la llamada
+    de el script de, en este caso, button y hacer lo siguiente en el JS -->
+    
+    <button id="buttonCalc">Calcular</button>
+
+    <!-- parrafo que mostrara nuestro resultado. -->
+
+    <p id="result"></p>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+
+
